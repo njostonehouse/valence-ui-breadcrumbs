@@ -6,6 +6,11 @@ gulp.task( 'clean', function( cb ) {
 		.then( function() { cb(); } );
 } );
 
+gulp.task( 'copy-icons', function () {
+	return gulp.src( 'src/**/*.png' )
+		.pipe( gulp.dest( 'dist' ) );
+} );
+
 gulp.task( 'css', function () {
 	return vui.makeCss( 'src/**/*.style', 'dist/' );
 } );
@@ -15,7 +20,7 @@ gulp.task( 'less', function () {
 } );
 
 gulp.task( 'default', [ 'clean' ], function() {
-	gulp.start( 'css', 'less' );
+	gulp.start( 'css', 'less', 'copy-icons' );
 } );
 
 gulp.task( 'test', function () {
