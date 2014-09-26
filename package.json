@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "gulp": "^3.8.8",
-    "vui-helpers": "^0.0.4"
+    "vui-helpers": "^0.0.7"
   }
 }
