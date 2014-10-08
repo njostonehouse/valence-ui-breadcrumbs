@@ -3,7 +3,7 @@
 
 	describe( 'vui', function() {
 
-		var node, b1, b2, b3;
+		var node, b1, b2, b3, text1, text2, text3;
 
 		beforeEach( function () {
 			jasmine.addMatchers( d2l.jasmine.matchers );
@@ -36,8 +36,14 @@
 				node.className = 'vui-breadcrumbs';
 				node.style.color = 'green';
 				b1 = node.appendChild( document.createElement( 'li' ) );
+				text1 = b1.appendChild( document.createElement( 'a' ) );
+				text1.appendChild( document.createTextNode( 'crumb1' ) );
 				b2 = node.appendChild( document.createElement( 'li' ) );
+				text2 = b2.appendChild( document.createElement( 'a' ) );
+				text2.appendChild( document.createTextNode( 'crumb2' ) );
 				b3 = node.appendChild( document.createElement( 'li' ) );
+				text3 = b3.appendChild( document.createElement( 'span' ) );
+				text3.appendChild( document.createTextNode( 'crumb3' ) );
 			} );
 
 			afterEach( function() {
@@ -90,6 +96,10 @@
 					expect( b1 ).toHaveAfterElementContent( 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAYAAADZCo4zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsMEBcXxQSJ2QAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAdElEQVQYlX2PQQqEQBADo1+aq7Aw/mtA/+Ve9pq8KV5ExrF7Aw0NVQQy2ca/zAAgaUkFSRXAT1ILDdsguZE0yWYb/d1PJj3sSMJYOUpTNFPSAaACWOcAtgvupZTvWN+u+i1a8YK3kEHbAMmawb7hE8F0Zp8TqrDyyH7mhFwAAAAASUVORK5CYII=)' );
 				} );
 
+				it( 'text has link color', function() {
+					expect( text1 ).toHaveColor( 'rgb(0, 97, 127)' );
+				} );
+
 			} );
 
 			describe( 'last breadcrumb', function() {
@@ -100,6 +110,10 @@
 
 				it( 'has after pseudo-element with display none', function() {
 					expect( b3 ).toHaveAfterElementDisplay( 'none' );
+				} );
+
+				it( 'text has green color', function() {
+					expect( text3 ).toHaveColor( 'rgb(0, 128, 0)' );
 				} );
 
 			} );
