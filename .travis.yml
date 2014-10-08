@@ -3,7 +3,7 @@ node_js:
 - '0.10'
 deploy:
   provider: npm
-  email: dave.lockhart@d2l.com
+  email: d2ltravisdeploy@d2l.com
   api_key:
     secure: gSZWtkjPV568p7GYKnTR/hJrmyb+ayOIffta95kCDU7U6GIoVRTjHbj1JreJ/RPnp8U9wOgofwm/BxHaNCFybme/gdjKn5Q+mxpGxEfHg59y0rcUKrJhUa/lhFaGAtPNfh6jix+x6dNTwEY6W/xLe9BanJaTOlIOXFYd88j9ccM=
   on:
