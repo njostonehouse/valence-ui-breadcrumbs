@@ -1,3 +1,5 @@
+@import 'node_modules/vui-link/link';
+
 .vui-breadcrumbs() {
 	padding: 0;
 	margin: 0;
@@ -26,6 +28,9 @@
 			[dir='rtl'] & {
 				content: data-uri('image/png;base64','separator_rtl.png');
 			}
+		}
+		& > a {
+			.vui-link();
 		}
 	}
 }
