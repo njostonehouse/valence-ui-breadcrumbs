@@ -19,12 +19,11 @@ Import the library into your LESS file:
 @import 'node_modules/vui-breadcrumbs/dist/breadcrumbs'
 ```
 
-Breadcrumb styles can be applied using the `vui-breadcrumb` mixin. This is best
-accomplished using an unordered list of breadcrumb items:
+Breadcrumb styles can be applied using the `#vui.breadcrumb` mixin. This is best accomplished using an ordered list of breadcrumb items:
 
 ```css
 ol.breadcrumbs {
-  .vui-breadcrumbs();
+  #vui.breadcrumbs();
 }
 ```
 
