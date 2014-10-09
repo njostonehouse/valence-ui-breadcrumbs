@@ -1,36 +1,40 @@
 @import 'node_modules/vui-link/link';
 
-.vui-breadcrumbs() {
-	padding: 0;
-	margin: 0;
-	list-style: none outside none;
-	& > li, 
-	& > div,
-	& > span {
-		background-color: transparent;
-		border-width: 0;
-		display: inline-block;
+#vui {
+
+	.breadcrumbs() {
+		padding: 0;
+		margin: 0;
 		list-style: none outside none;
-		&:last-child {
-			color: inherit;
-			&:after {
-				display: none;
-				[dir='rtl'] & {
+		& > li, 
+		& > div,
+		& > span {
+			background-color: transparent;
+			border-width: 0;
+			display: inline-block;
+			list-style: none outside none;
+			&:last-child {
+				color: inherit;
+				&:after {
 					display: none;
+					[dir='rtl'] & {
+						display: none;
+					}
 				}
 			}
-		}
-		&:after {
-			content: data-uri('image/png;base64','separator.png');
-			padding-left: 10px;
-			padding-right: 12px;
-			vertical-align: middle;
-			[dir='rtl'] & {
-				content: data-uri('image/png;base64','separator_rtl.png');
+			&:after {
+				content: data-uri('image/png;base64','separator.png');
+				padding-left: 10px;
+				padding-right: 12px;
+				vertical-align: middle;
+				[dir='rtl'] & {
+					content: data-uri('image/png;base64','separator_rtl.png');
+				}
+			}
+			& > a {
+				#vui.link();
 			}
 		}
-		& > a {
-			.vui-link();
-		}
 	}
+
 }
