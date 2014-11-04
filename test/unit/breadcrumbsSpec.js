@@ -6,7 +6,7 @@
 		var node, b1, b2, b3, text1, text2, text3;
 
 		beforeEach( function () {
-			jasmine.addMatchers( d2l.jasmine.matchers );
+			jasmine.addMatchers( vui.jasmine.dom.matchers );
 		} );
 
 		describe( 'selectors', function() {
