@@ -1,3 +1,4 @@
+@import 'breadcrumbs-icons';
 @import 'node_modules/vui-link/link';
 
 #vui {
@@ -6,7 +7,7 @@
 		padding: 0;
 		margin: 0;
 		list-style: none outside none;
-		& > li, 
+		& > li,
 		& > div,
 		& > span {
 			background-color: transparent;
@@ -23,12 +24,12 @@
 				}
 			}
 			&:after {
-				content: data-uri('image/png;base64','separator.png');
+				content: @vui-separator;
 				padding-left: 10px;
 				padding-right: 12px;
 				vertical-align: middle;
 				[dir='rtl'] & {
-					content: data-uri('image/png;base64','separator_rtl.png');
+					content: @vui-separator-rtl;
 				}
 			}
 			& > a {
