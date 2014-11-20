@@ -1,7 +1,7 @@
 ( function() {
 	'use strict';
 
-	describe( 'vui', function() {
+	describe( 'vui-breadcrumbs', function() {
 
 		var node, b1, b2, b3, text1, text2, text3;
 
@@ -32,18 +32,23 @@
 		describe( 'ol breadcrumbs', function() {
 
 			beforeEach( function () {
+
 				node = document.body.appendChild( document.createElement( 'ol' ) );
 				node.className = 'vui-breadcrumbs';
 				node.style.color = 'green';
+
 				b1 = node.appendChild( document.createElement( 'li' ) );
 				text1 = b1.appendChild( document.createElement( 'a' ) );
 				text1.appendChild( document.createTextNode( 'crumb1' ) );
+
 				b2 = node.appendChild( document.createElement( 'li' ) );
 				text2 = b2.appendChild( document.createElement( 'a' ) );
 				text2.appendChild( document.createTextNode( 'crumb2' ) );
+
 				b3 = node.appendChild( document.createElement( 'li' ) );
 				text3 = b3.appendChild( document.createElement( 'span' ) );
 				text3.appendChild( document.createTextNode( 'crumb3' ) );
+
 			} );
 
 			afterEach( function() {
