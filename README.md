@@ -1,4 +1,4 @@
-#VUI Breadcrumbs
+# vui-breadcrumbs
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
 
