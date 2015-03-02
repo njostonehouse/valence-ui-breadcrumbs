@@ -6,7 +6,7 @@
 [npm-url]: https://www.npmjs.org/package/vui-breadcrumbs
 [npm-image]: https://img.shields.io/npm/v/vui-breadcrumbs.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-breadcrumbs
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-breadcrumbs.svg
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-breadcrumbs.svg?branch=master
 [dependencies-url]: https://david-dm.org/brightspace/valence-ui-breadcrumbs
 [dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-breadcrumbs.svg
 
