@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
-    "clean": "rimraf breadcrumbs.css && rimraf breadcrumbs-less.css",
+    "clean": "rimraf *.css",
     "prebuild": "npm run clean",
     "build": "npm run build:sass:css && npm run build:less:css",
     "prebuild:less:css": "imgtoless -p vui- -o breadcrumbs-icons.less *.png",
