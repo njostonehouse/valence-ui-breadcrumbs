@@ -1,6 +1,6 @@
 {
   "name": "vui-breadcrumbs",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-breadcrumbs",
   "dependencies": {
-    "vui-link": "^0.5.0"
+    "vui-link": "^0.5.1"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
