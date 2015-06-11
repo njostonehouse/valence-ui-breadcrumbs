@@ -1,6 +1,6 @@
 {
   "name": "vui-breadcrumbs",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",
@@ -13,7 +13,10 @@
     "build:sass:css": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
     "postbuild:sass:css": "csslint breadcrumbs.css",
     "pretest": "npm run build",
-    "test": "karma start karma.conf.js"
+    "test": "npm run diff:assert && karma start karma.conf.js",
+    "prediff:assert": "npm run diff:create",
+    "diff:assert": "assertnodiff --file1 ./test/diff/less-scss-diff --file2 ./test/diff/less-scss-diff-new",
+    "diff:create": "createpatch --file1 breadcrumbs-less.css --file2 breadcrumbs.css -o ./test/diff/less-scss-diff-new"
   },
   "repository": {
     "type": "git",
@@ -35,6 +38,7 @@
   },
   "devDependencies": {
     "csslint": "^0.10.0",
+    "diff-cli": "git://github.com/Brightspace/diff-cli.git#v0.0.1",
     "images-to-variables": "^0.2.1",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
