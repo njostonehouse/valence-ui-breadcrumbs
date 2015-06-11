@@ -1,0 +1,92 @@
+===================================================================
+--- breadcrumbs-less.css
++++ breadcrumbs.css
+@@ -2,70 +2,79 @@
+   padding: 0;
+   margin: 0;
+   list-style: none outside none;
+ }
++
+ .vui-breadcrumbs > li,
+ .vui-breadcrumbs > div,
+ .vui-breadcrumbs > span {
+   background-color: transparent;
+   border-width: 0;
+   display: inline-block;
+   list-style: none outside none;
+ }
++
+ .vui-breadcrumbs > li:last-child,
+ .vui-breadcrumbs > div:last-child,
+ .vui-breadcrumbs > span:last-child {
+   color: inherit;
+ }
++
+ .vui-breadcrumbs > li:last-child:after,
+ .vui-breadcrumbs > div:last-child:after,
+ .vui-breadcrumbs > span:last-child:after {
+   display: none;
+ }
++
+ [dir='rtl'] .vui-breadcrumbs > li:last-child:after,
+ [dir='rtl'] .vui-breadcrumbs > div:last-child:after,
+ [dir='rtl'] .vui-breadcrumbs > span:last-child:after {
+   display: none;
+ }
++
+ .vui-breadcrumbs > li:after,
+ .vui-breadcrumbs > div:after,
+ .vui-breadcrumbs > span:after {
+   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAAGFBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzp9kNTAAAAB3RSTlMAPD9CfoG9/ZexDgAAACtJREFUCNdjYAABRhBh7gAkWEtAzHA0JlsxkHAPYGBgKUVmmAMZDEwMUAAA1JAFu/qZoCgAAAAASUVORK5CYII=");
+   padding-left: 10px;
+   padding-right: 12px;
+   vertical-align: middle;
+ }
++
+ [dir='rtl'] .vui-breadcrumbs > li:after,
+ [dir='rtl'] .vui-breadcrumbs > div:after,
+ [dir='rtl'] .vui-breadcrumbs > span:after {
+   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAAGFBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzp9kNTAAAAB3RSTlMAPD9CfoG9/ZexDgAAACpJREFUCNdjYIACASBmKQYS7gFARikywzwBSLCWgFSFO6AxQToYFMAmAADbqgX3+tMKZQAAAABJRU5ErkJggg==");
+ }
++
+ .vui-breadcrumbs > li > a,
++.vui-breadcrumbs > li > a:visited,
++.vui-breadcrumbs > li > a:link,
++.vui-breadcrumbs > li > a:active,
+ .vui-breadcrumbs > div > a,
++.vui-breadcrumbs > div > a:visited,
++.vui-breadcrumbs > div > a:link,
++.vui-breadcrumbs > div > a:active,
+ .vui-breadcrumbs > span > a,
+-.vui-breadcrumbs > li > a:visited,
+-.vui-breadcrumbs > div > a:visited,
+ .vui-breadcrumbs > span > a:visited,
+-.vui-breadcrumbs > li > a:link,
+-.vui-breadcrumbs > div > a:link,
+ .vui-breadcrumbs > span > a:link,
+-.vui-breadcrumbs > li > a:active,
+-.vui-breadcrumbs > div > a:active,
+ .vui-breadcrumbs > span > a:active {
+-  color: #00617f;
++  color: #00617F;
+   font-weight: normal;
+   text-decoration: none;
+   cursor: pointer;
+ }
++
+ .vui-breadcrumbs > li > a:hover,
++.vui-breadcrumbs > li > a:focus,
+ .vui-breadcrumbs > div > a:hover,
++.vui-breadcrumbs > div > a:focus,
+ .vui-breadcrumbs > span > a:hover,
+-.vui-breadcrumbs > li > a:focus,
+-.vui-breadcrumbs > div > a:focus,
+ .vui-breadcrumbs > span > a:focus {
+   color: #007795;
+   text-decoration: underline;
+ }
++
+ .vui-breadcrumbs > li > a:focus,
+ .vui-breadcrumbs > div > a:focus,
+ .vui-breadcrumbs > span > a:focus {
+   border-color: #94ccda;
