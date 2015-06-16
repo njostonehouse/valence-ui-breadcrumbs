@@ -7,6 +7,4 @@
 node_modules
 karma.conf.js
 test
-breadcrumbs.css.less
 breadcrumbs.css.scss
-breadcrumbs-less.css
