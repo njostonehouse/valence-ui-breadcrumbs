@@ -1,22 +1,13 @@
 {
   "name": "vui-breadcrumbs",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean",
-    "build": "npm run build:sass:css && npm run build:less:css",
-    "prebuild:less:css": "imgtoless -p vui- -o breadcrumbs-icons.less *.png",
-    "build:less:css": "lessc breadcrumbs.css.less > breadcrumbs-less.css",
-    "postbuild:less:css": "csslint breadcrumbs-less.css",
-    "prebuild:sass:css": "imgtoscss -p vui- -o breadcrumbs-icons.scss *.png",
-    "build:sass:css": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
-    "postbuild:sass:css": "csslint breadcrumbs.css",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.png",
+    "build": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
     "pretest": "npm run build",
-    "test": "npm run diff:assert && karma start karma.conf.js",
-    "prediff:assert": "npm run diff:create",
-    "diff:assert": "assertnodiff --file1 ./test/diff/less-scss-diff --file2 ./test/diff/less-scss-diff-new",
-    "diff:create": "createpatch --file1 breadcrumbs-less.css --file2 breadcrumbs.css -o ./test/diff/less-scss-diff-new"
+    "test": "csslint breadcrumbs.css && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -34,18 +25,16 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-breadcrumbs",
   "dependencies": {
-    "vui-link": "^0.5.1"
+    "vui-link": "^0.6.0"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
-    "diff-cli": "git://github.com/Brightspace/diff-cli.git#v0.0.1",
     "images-to-variables": "^0.2.1",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-jasmine": "^0.3.5",
     "karma-cli": "0.0.4",
-    "less": "^2.5.1",
     "node-sass": "^3.1.1",
     "rimraf": "^2.3.4"
   }
