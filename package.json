@@ -1,11 +1,12 @@
 {
   "name": "vui-breadcrumbs",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.png",
     "build": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
+    "postinstall": "./node_modules/.bin/bower install",
     "pretest": "npm run build",
     "test": "csslint breadcrumbs.css && karma start karma.conf.js"
   },
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-breadcrumbs",
   "dependencies": {
-    "vui-link": "^0.6.0"
+    "bower": "^1.5.2"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
