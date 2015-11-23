@@ -102,7 +102,7 @@
 				} );
 
 				it( 'text has link color', function() {
-					expect( text1 ).toHaveColor( 'rgb(0, 97, 127)' );
+					expect( text1 ).toHaveColor( 'rgb(0, 111, 191)' );
 				} );
 
 			} );
