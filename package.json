@@ -1,6 +1,6 @@
 {
   "name": "vui-breadcrumbs",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",

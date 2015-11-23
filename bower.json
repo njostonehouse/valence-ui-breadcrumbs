@@ -3,7 +3,7 @@
   "main": "breadcrumbs.scss",
   "license": "Apache-2.0",
   "dependencies": {
-    "vui-link": "~0.7.0"
+    "vui-link": "~1.0.1"
   },
   "ignore": [
     "test",
