@@ -20,7 +20,7 @@ bower install vui-breadcrumbs
 
 ## Usage
 
-**Breadcrumbs:**
+**Using Ordered List:**
 
 ```html
 <ol>
