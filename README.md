@@ -6,6 +6,42 @@
 
 This component contains Sass mixins and CSS that you can use to style breadcrumbs.
 
+## Installation
+
+Install from NPM:
+```shell
+npm install vui-breadcrumbs
+```
+
+Install from Bower:
+```shell
+bower install vui-breadcrumbs
+```
+
+## Usage
+
+**Breadcrumbs:**
+
+```html
+<ol>
+	<li>crumb 1</li>
+	<li>crumb 2</li>
+	<li>crumb 3</li>
+</ol>
+```
+
+```scss
+@import 'bower_components/vui-breadcrumbs/breadcrumbs.scss'; // or...
+
+@import "node_modules/vui-breadcrumbs/breadcrumbs.scss";
+
+.app {
+	ol {
+		@include vui-breadcrumbs;
+	}
+}
+```
+
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 #### Coding styles
