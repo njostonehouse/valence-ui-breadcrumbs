@@ -1,11 +1,13 @@
 
 @import 'breadcrumbs-icons';
 @import 'bower_components/vui-link/link';
+@import 'bower_components/vui-typography/small-text.scss';
 
 @mixin vui-breadcrumbs() {
-
+	@include vui-typography-small-text;
 	padding: 0;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	list-style: none outside none;
 	& > li,
 	& > div,
