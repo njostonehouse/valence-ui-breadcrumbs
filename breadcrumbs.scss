@@ -1,4 +1,3 @@
-
 @import 'breadcrumbs-icons';
 @import 'bower_components/vui-link/link';
 @import 'bower_components/vui-typography/small-text.scss';
@@ -26,7 +25,9 @@
 			}
 		}
 		&:after {
+			display: inline-block;
 			content: $vui-separator;
+			height: 1rem;
 			padding-left: 10px;
 			padding-right: 12px;
 			vertical-align: middle;
