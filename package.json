@@ -4,7 +4,7 @@
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.png",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.svg",
     "build": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
     "postinstall": "./node_modules/.bin/bower install",
     "pretest": "npm run build",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "csslint": "^0.10.0",
-    "images-to-variables": "^0.2.1",
+    "images-to-variables": "^0.3.0",
     "jasmine-core": "^2.4.1",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
