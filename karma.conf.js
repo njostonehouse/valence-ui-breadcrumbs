@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       { pattern: 'breadcrumbs.css', included: true },
       'node_modules/jasmine-dom-matchers/matchers.js',
-      'test/**/*.js'
+      'test/unit/**/*.js'
     ],
 
 

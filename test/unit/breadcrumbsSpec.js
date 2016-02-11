@@ -90,15 +90,11 @@
 				} );
 
 				it( 'has after pseudo-element with display inline', function() {
-					expect( b1 ).toHaveAfterElementDisplay( 'inline' );
-				} );
-
-				it( 'has after pseudo-element with base-64 icon seperator', function() {
-					expect( b1 ).toHaveAfterElementBase64Image();
+					expect( b1 ).toHaveAfterElementDisplay( 'inline-block' );
 				} );
 
 				it( 'has seperator with icon content', function() {
-					expect( b1 ).toHaveAfterElementContent( 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAAGFBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzp9kNTAAAAB3RSTlMAPD9CfoG9/ZexDgAAACtJREFUCNdjYAABRhBh7gAkWEtAzHA0JlsxkHAPYGBgKUVmmAMZDEwMUAAA1JAFu/qZoCgAAAAASUVORK5CYII=)' );
+					expect( b1 ).toHaveAfterElementContent( 'url(data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M11%209L7%203m4%206l-4%206%22%20stroke-linecap%3D%22round%22%20stroke%3D%22%23B9C2D0%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E)' );
 				} );
 
 				it( 'text has link color', function() {
@@ -129,12 +125,8 @@
 					document.body.setAttribute( 'dir', 'rtl' );
 				} );
 
-				it( 'has after pseudo-element with base-64 icon seperator', function() {
-					expect( b1 ).toHaveAfterElementBase64Image();
-				} );
-
 				it( 'has seperator with icon content', function() {
-					expect( b1 ).toHaveAfterElementContent( 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAAGFBMVEX////MzMzMzMzMzMzMzMzMzMzMzMzMzMzp9kNTAAAAB3RSTlMAPD9CfoG9/ZexDgAAACpJREFUCNdjYIACASBmKQYS7gFARikywzwBSLCWgFSFO6AxQToYFMAmAADbqgX3+tMKZQAAAABJRU5ErkJggg==)' );
+					expect( b1 ).toHaveAfterElementContent( 'url(data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7%209l4-6M7%209l4%206%22%20stroke-linecap%3D%22round%22%20stroke%3D%22%23B9C2D0%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E)' );
 				} );
 
 				it( 'has after pseudo-element with display none', function() {
