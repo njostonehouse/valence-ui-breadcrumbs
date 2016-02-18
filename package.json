@@ -8,7 +8,7 @@
     "build": "npm run build:styles && npm run build:docs",
     "build:styles": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css && cp breadcrumbs.css ./test",
     "build:docs": "node-sass --output-style expanded ./screenshots/screenshots.scss ./test/screenshots.css && npm run snapshot",
-    "postinstall": "./node_modules/.bin/bower install",
+    "postinstall": "bower install",
     "snapshot": "phantomjs ./screenshots/build.js",
     "perceptual-diff": "percy snapshot test/",
     "pretest": "npm run build",
