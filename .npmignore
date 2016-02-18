@@ -6,6 +6,6 @@ node_modules
 .npmignore
 .travis.yml
 .csslintrc
-karma.conf.js
 test
 breadcrumbs.css.scss
+*.css
