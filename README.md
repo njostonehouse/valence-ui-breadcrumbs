@@ -30,7 +30,7 @@ Depending on which installation method you choose, use that path when doing the 
 
 ## Usage
 
-You can a collection of `<li>`, `<div>`, or `<span>` HTML elements to represent breadcrumbs. The breadcrumbs should be grouped under an appropriate parent, and the style should be applied to that parent.
+Use a `<ol>` HTML element to represent breadcrumbs. Each breadcrumb should be a `<li>` child element of the `<ol>`.
 
 HTML:
 ```html
@@ -52,16 +52,16 @@ Any of the breadcrumbs in a group that uses a `<a>` tag will be styled as a link
 
 HTML:
 ```html
-<div class="crumbs">
-	<div><a onclick="return false;" href="javascript:void(0);">Root</a></div>
-	<div><a onclick="return false;" href="javascript:void(0);">Node</a></div>
-	<div>Leaf</span>
-</div>
+<ul>
+	<li><a onclick="return false;" href="javascript:void(0);">Root</a></li>
+	<li><a onclick="return false;" href="javascript:void(0);">Node</a></li>
+	<li>Leaf</li>
+</ul>
 ```
 
 SCSS:
 ```scss
-.crumbs {
+ul {
 	@include vui-breadcrumbs;
 }
 ```
