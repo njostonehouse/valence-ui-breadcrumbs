@@ -19,7 +19,7 @@ function capture(url, name, callback) {
 	});
 }
 
-capture('./test/perceptual/test.html', 'sample', phantom.exit);
+capture('./test/test.html', 'sample', phantom.exit);
 
 
 
