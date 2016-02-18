@@ -5,8 +5,12 @@
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.svg",
-    "build": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css",
+    "build": "npm run build:styles && npm run build:docs",
+    "build:styles": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css && cp breadcrumbs.css ./test/perceptual",
+    "build:docs": "node-sass --output-style expanded ./screenshots/screenshots.scss ./test/screenshots.css && npm run snapshot",
     "postinstall": "./node_modules/.bin/bower install",
+    "snapshot": "phantomjs ./screenshots/build.js",
+    "perceptual-diff": "percy snapshot test/perceptual/",
     "pretest": "npm run build",
     "test": "csslint breadcrumbs.css"
   },
