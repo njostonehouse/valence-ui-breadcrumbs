@@ -37,6 +37,6 @@
     "images-to-variables": "^0.3.0",
     "node-sass": "^3.4.2",
     "phantomjs-prebuilt": "^2.1.4",
-    "rimraf": "^2.3.4"
+    "rimraf": "^2.5.2"
   }
 }
