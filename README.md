@@ -53,8 +53,8 @@ Any of the breadcrumbs in a group that uses a `<a>` tag will be styled as a link
 HTML:
 ```html
 <ul>
-	<li><a onclick="return false;" href="javascript:void(0);">Root</a></li>
-	<li><a onclick="return false;" href="javascript:void(0);">Node</a></li>
+	<li><a href="#">Root</a></li>
+	<li><a href="#">Node</a></li>
 	<li>Leaf</li>
 </ul>
 ```
