@@ -4,7 +4,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "vui-link": "~1.1.0",
-	"vui-typography": "~2.0.0"
+    "vui-typography": "~2.0.0",
+    "polymer": "~1.4.0"
   },
   "ignore": [
     "test",

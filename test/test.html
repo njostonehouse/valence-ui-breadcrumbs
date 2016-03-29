@@ -2,8 +2,14 @@
 <html>
 <head>
 	<title>Breadcrumbs Perceptual Tests</title>
-	<link rel="stylesheet" type="text/css" href="breadcrumbs.css">
-	<link rel="stylesheet" type="text/css" href="screenshots.css">
+	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	<script>
+		window.Polymer = window.Polymer || {};
+	    window.Polymer.dom = 'shadow';
+	</script>
+	<link rel="stylesheet" type="text/css" href="breadcrumbs.css" />
+	<link rel="stylesheet" type="text/css" href="screenshots.css" />
+	<link rel="import" href="../breadcrumbs.html" />
 </head>
 
 <body>
@@ -260,5 +266,92 @@
 			<span><a href="#">Mid Crumb</a></span>
 			<span><a href="#">End Crumb</a></span>
 		</div>
+	</div>
+
+	<!-- web component -->
+	<div>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<span>Mid Crumb</span>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<span>Mid Crumb</span>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<a href="#">Mid Crumb</a>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<span>Mid Crumb</span>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<a href="#">Mid Crumb</a>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<span>Mid Crumb</span>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<a href="#">Mid Crumb</a>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<a href="#">Mid Crumb</a>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+	</div>
+
+	<div dir="rtl">
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<span>Mid Crumb</span>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<span>Mid Crumb</span>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<a href="#">Mid Crumb</a>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<span>Mid Crumb</span>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<a href="#">Mid Crumb</a>
+			<span>End Crumb</span>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<span>Mid Crumb</span>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<span>First Crumb</span>
+			<a href="#">Mid Crumb</a>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
+		<vui-breadcrumbs>
+			<a href="#">First Crumb</a>
+			<a href="#">Mid Crumb</a>
+			<a href="#">End Crumb</a>
+		</vui-breadcrumbs>
 	</div>
 </body>
