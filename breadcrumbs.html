@@ -1,17 +1,13 @@
-<link rel="import" href="../polymer/polymer.html"/>
-<link rel="import" href="../vui-link/link.scss"/>
-<link rel="import" href="../vui-typography/small-text.scss"/>
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../vui-typography/typography.html">
 
 <dom-module id="vui-breadcrumb">
 	<template>
-		<style>
+		<style is="custom-style" include="vui-small-text">
 			:host {
+				@apply(--vui-small-text);
 				background-color: transparent;
 				border-width: 0;
-			}
-
-			:host a {
-				@include vui-link;
 			}
 		</style>
 

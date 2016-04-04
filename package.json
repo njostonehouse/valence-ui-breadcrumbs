@@ -3,16 +3,14 @@
   "version": "2.0.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
-    "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.svg",
-    "build": "npm run build:styles && npm run build:docs",
-    "build:styles": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css && cp breadcrumbs.css ./test",
-    "build:docs": "node-sass --output-style expanded ./screenshots/screenshots.scss ./test/screenshots.css && npm run snapshot",
+    "prebuild": "cpy breadcrumbs.html ./bower_components/temp",
+    "build": "vulcanize ./bower_components/temp/breadcrumbs.html > ./test/breadcrumbs.test.html",
+    "postbuild": "rimraf ./bower_components/temp",
+    "clean": "rimraf ./test/breadcrumbs.test.html",
+    "demo": "polyserve",
     "postinstall": "bower install",
     "snapshot": "phantomjs ./screenshots/build.js",
-    "perceptual-diff": "percy snapshot test/",
-    "pretest": "npm run build",
-    "test": "csslint breadcrumbs.css"
+    "test": "polylint"
   },
   "repository": {
     "type": "git",
@@ -33,10 +31,14 @@
     "bower": "^1.7.7"
   },
   "devDependencies": {
+    "cpy-cli": "^1.0.0",
     "csslint": "^0.10.0",
     "images-to-variables": "^0.3.0",
     "node-sass": "^3.4.2",
     "phantomjs-prebuilt": "^2.1.4",
-    "rimraf": "^2.5.2"
+    "polylint": "^2.10.1",
+    "polyserve": "^0.7.1",
+    "rimraf": "^2.5.2",
+    "vulcanize": "^1.14.8"
   }
 }

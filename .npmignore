@@ -7,5 +7,3 @@ node_modules
 .travis.yml
 .csslintrc
 test
-breadcrumbs.css.scss
-*.css

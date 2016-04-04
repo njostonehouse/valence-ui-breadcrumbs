@@ -1,6 +1,6 @@
 {
   "name": "vui-breadcrumbs",
-  "main": "breadcrumbs.scss",
+  "main": "breadcrumbs.html",
   "license": "Apache-2.0",
   "dependencies": {
     "vui-link": "~1.1.0",
@@ -16,5 +16,10 @@
     ".travis.yml",
     "karma.conf.js",
     "package.json"
-  ]
+  ],
+  "dependencies": {
+    "vui-typography": "~3.0.0",
+	"vui-link": "~2.0.0",
+    "polymer": "~1.4.0"
+  }
 }
